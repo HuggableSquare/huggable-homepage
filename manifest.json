@@ -1,0 +1,11 @@
+{
+   "chrome_url_overrides": {
+      "newtab": "new.html"
+   },
+   "description": "poorly made new tab page.",
+   "incognito": "split",
+   "manifest_version": 2,
+   "name": "huggable-homepage",
+   "offline_enabled": true,
+   "version": "0.1.0"
+}
