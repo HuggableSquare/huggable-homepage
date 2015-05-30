@@ -6,7 +6,7 @@ there's also a "manifest.json" file incase you want to use it as a chrome new ta
   
 dependencies
 ------------
-I didn't package any of the dependencies because I'm not sure if I should
+I didn't package any of the dependencies because I'm not sure if I should  
 they are all linked on some sort of cdn though  
 here's a list:
 + hover - [http://ianlunn.github.io/Hover/](http://ianlunn.github.io/Hover/)
