@@ -21,4 +21,8 @@ it's pretty self-explanatory, but with dependencies in mind, either stick with t
 + for jquery, basically the samething but put it in the "js" folder and make sure the file names match up
 + and for fontawesome, follow the directions on their site for setup  
 
-also shoutout to this guy for the clock.js: [http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/](http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/)
+also shoutout to this guy for the clock.js: [http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/](http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/)  
+
+screenshots
+-----------
+![parent-hovered](http://i.imgur.com/Iv97rYL.png)
