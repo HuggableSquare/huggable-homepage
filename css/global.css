@@ -25,8 +25,6 @@ html {
 }
 /* Body/Global Stuff */
 body {
-  /* Background Stuff */
-  
   /* Text Style */
   color: white;
   font-size: 16pt;
@@ -40,7 +38,7 @@ body {
   margin: 0;
   display: table;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,5);
-  -moz-box-shadow: inset 0 0 100px rgba(0,0,0,5);
+     -moz-box-shadow: inset 0 0 100px rgba(0,0,0,5);
           box-shadow: inset 0 0 100px rgba(0,0,0,5);
 }
 
@@ -55,7 +53,6 @@ table {
 }
 
 .btn {
-/*  display: inline;*/
   text-decoration: none;
   border: 2px solid white;
   color: white;
