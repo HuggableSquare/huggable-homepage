@@ -1,4 +1,4 @@
-// Makes sure script doesn't execture before page is loaded
+// Makes sure script doesn't execute before page is loaded
 window.onload = function () {
   var clockSettingId = document.getElementById('clockSetting');
   var clock = document.getElementById('clock');
