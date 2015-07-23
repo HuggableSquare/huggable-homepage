@@ -38,3 +38,15 @@ html {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
+.footer {
+  font-size: 12pt;
+  padding-bottom: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.setting:hover {
+  color: orange;
+}

@@ -1,6 +1,7 @@
 huggable-homepage
 =================
 this is a poorly made new tab/home page that I made using the css from my website ([pogonip.pw](http://pogonip.pw/))  
+btw, the clock and calendar buttons in the bottom left are toggles to remove the clock/date, respectively
   
 dependencies
 ------------

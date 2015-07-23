@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
     <script type="text/javascript" src="js/clock.js"></script>
+	<script type="text/javascript" src="js/settings.js"></script>
   </head>
   
   <body>
     <div class="inner">
       <div class="clock">
-        <span class="btn hvr-float" style="font-size: 72pt;">
+        <span class="btn hvr-float" style="font-size: 72pt;" id="clock">
           <b id="hours"></b>
           <b id="point">:</b>
           <b id="min"></b>
@@ -35,11 +36,22 @@
         <a href="https://reddit.com/r/osugame/" class="btn">/r/osugame.</a>
         <a href="https://reddit.com/" class="btn">front page.</a></div>
       </span>
+	  <span>
+        <label class="btn hvr-float">news. <i class="fa fa-sort"></i></label>
+                
+        <br /><div><a href="http://thenextweb.com/" class="btn">the next web.</a>
+        <a href="http://www.windowscentral.com/" class="btn">windows central.</a>
+		<a href="http://techcrunch.com/" class="btn">techcrunch.</a></div>
+      </span>
       <span>
         <label class="btn hvr-float">misc. <i class="fa fa-sort"></i></label>
         
         <br /><div><a href="https://agar.io/" class="btn">agario.</a></div>
       </span>
+	  <div class="footer">
+        <div align="left" style="width:50%;float:left;">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-clock-o setting" id="clockSetting"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar-o setting" id="dateSetting"></i></div>
+        <div align="right" style="width:50%;float:right;">made with <i class="fa fa-heart-o setting"></i> by huggablesquare&nbsp;&nbsp;&nbsp;&nbsp;</div>
+      </div>
     </div>
   </body>
 </html>
