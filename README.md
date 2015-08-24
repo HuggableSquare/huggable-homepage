@@ -24,4 +24,6 @@ and, since chrome doesn't support custom new tab pages, you can load the folder 
 
 screenshots
 -----------
-![parent-hovered](http://i.imgur.com/Iv97rYL.png)
+![time_and_date](http://i.imgur.com/O6HlqZ0.png)
+![date_only](http://i.imgur.com/ab1r70W.png)
+![neither](http://i.imgur.com/ZIbqEwv.png)
