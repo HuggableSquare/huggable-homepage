@@ -1,17 +1,26 @@
-// Makes sure script doesn't execute before page is loaded
-window.onload = function () {
+$(document).ready(function() {
   var clockSettingId = document.getElementById('clockSetting');
   var clock = document.getElementById('clock');
   
   var dateSettingId = document.getElementById('dateSetting');
   var date = document.getElementById('Date');
+  
+  var hourSettingId = document.getElementById('clock');
+  var meridiem = document.getElementById('meridiem');
+  var hours12 = document.getElementById('hours12');
+  var hours24 = document.getElementById('hours24');
 
+  hours24.style.display = 'none';
+  
   // Checks stored data on page load
   if (localStorage.clockSetting == 0) {
     clock.style.display = 'none';
-  }
-  if (localStorage.dateSetting == 0) {
+  } if (localStorage.dateSetting == 0) {
     date.style.display = 'none';
+  } if (localStorage.hourSetting == 0) {
+    meridiem.style.display = 'none';
+    hours12.style.display = 'none';
+    hours24.style.display = 'inline-block';
   }
   
   // OnClick functions
@@ -38,4 +47,19 @@ window.onload = function () {
       localStorage.dateSetting = 1;
     }
   };
-};
+  
+  hourSettingId.onclick = function () {
+    localStorage.setItem("hourSetting", 1);
+    if (meridiem.style.display !== 'none') {
+      meridiem.style.display = 'none';
+      hours12.style.display = 'none';
+      hours24.style.display = 'inline-block';
+      localStorage.hourSetting = 0;
+    } else {
+      meridiem.style.display = 'inline-block';
+      hours12.style.display = 'inline-block';
+      hours24.style.display = 'none';
+      localStorage.hourSetting = 1;
+    }
+  };
+});
