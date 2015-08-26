@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   var clockSettingId = document.getElementById('clockSetting');
   var clock = document.getElementById('clock');
   
