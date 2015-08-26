@@ -4,6 +4,7 @@ $(document).ready(function () {
   
   var dateSettingId = document.getElementById('dateSetting');
   var date = document.getElementById('Date');
+  var dateSpace = document.getElementById('datespacefix');
   
   var hourSettingId = document.getElementById('clock');
   var meridiem = document.getElementById('meridiem');
@@ -17,6 +18,7 @@ $(document).ready(function () {
     clock.style.display = 'none';
   } if (localStorage.dateSetting == 0) {
     date.style.display = 'none';
+	dateSpace.style.display = 'none';
   } if (localStorage.hourSetting == 0) {
     meridiem.style.display = 'none';
     hours12.style.display = 'none';
@@ -41,9 +43,11 @@ $(document).ready(function () {
     localStorage.setItem("dateSetting", 1);
     if (date.style.display !== 'none') {
       date.style.display = 'none';
+	  dateSpace.style.display = 'none';
       localStorage.dateSetting = 0;
     } else {
-      date.style.display = 'inline-block';
+	  dateSpace.style.display = 'block';
+      date.style.display = 'block';
       localStorage.dateSetting = 1;
     }
   };
