@@ -11,20 +11,24 @@ $(document).ready(function () {
   $('#Date').html(dayNames[newDate.getDay()] + " " + monthNames[newDate.getMonth()] + ' ' + newDate.getDate() + ', ' + newDate.getFullYear());
 
   setInterval(function () {
-	// Create a newDate() object and extract the minutes of the current time on the visitor's
+    // Create a newDate() object and extract the minutes of the current time on the visitor's
     var minutes = new Date().getMinutes();
-	// Add a leading zero to the minutes value
+    // Add a leading zero to the minutes value
     $("#min").html((minutes < 10 ? "0" : "") + minutes);
   }, 1000);
 	
   setInterval(function () {
-	// Create a newDate() object and extract the hours of the current time on the visitor's
+    // Create a newDate() object and extract the hours of the current time on the visitor's
     var hours = new Date().getHours();
     // Convert to 12 hour clock
     $("#meridiem").html((hours >= 12 ? "PM" : "AM"));
     var hours12 = hours > 12 ? hours - 12 : hours;
+<<<<<<< HEAD
     hours12 = hours == 0 ? 12 : hours12;
 	// Add a leading zero to the hours value
+=======
+    // Add a leading zero to the hours value
+>>>>>>> origin/master
     $("#hours12").html((hours12 < 10 ? "0" : "") + hours12);
     $("#hours24").html((hours < 10 ? "0" : "") + hours);
   }, 1000);
