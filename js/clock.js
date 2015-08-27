@@ -21,8 +21,9 @@ $(document).ready(function () {
 	// Create a newDate() object and extract the hours of the current time on the visitor's
     var hours = new Date().getHours();
     // Convert to 12 hour clock
-    $("#meridiem").html((hours > 12 ? "PM" : "AM"));
+    $("#meridiem").html((hours >= 12 ? "PM" : "AM"));
     var hours12 = hours > 12 ? hours - 12 : hours;
+    hours12 = hours == 0 ? 12 : hours12;
 	// Add a leading zero to the hours value
     $("#hours12").html((hours12 < 10 ? "0" : "") + hours12);
     $("#hours24").html((hours < 10 ? "0" : "") + hours);
