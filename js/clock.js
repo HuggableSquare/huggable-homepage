@@ -23,12 +23,8 @@ $(document).ready(function () {
     // Convert to 12 hour clock
     $("#meridiem").html((hours >= 12 ? "PM" : "AM"));
     var hours12 = hours > 12 ? hours - 12 : hours;
-<<<<<<< HEAD
     hours12 = hours == 0 ? 12 : hours12;
-	// Add a leading zero to the hours value
-=======
     // Add a leading zero to the hours value
->>>>>>> origin/master
     $("#hours12").html((hours12 < 10 ? "0" : "") + hours12);
     $("#hours24").html((hours < 10 ? "0" : "") + hours);
   }, 1000);
