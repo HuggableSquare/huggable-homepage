@@ -1,7 +1,7 @@
 huggable-homepage
 =================
 this is a poorly made new tab/home page that I made using the css from my website ([pogonip.pw](http://pogonip.pw/))  
-btw, the clock/calendar buttons in the bottom left toggle the clock/date, respectively  
+btw, the clock/calendar/link buttons in the bottom left toggle the clock/date/links, respectively  
 and, clicking on the actual clock will switch between 12 and 24 hour modes  
   
 dependencies
@@ -13,7 +13,7 @@ here's a list:
 + jquery - [http://jquery.com/download/](http://jquery.com/download/)
 + fontawesome - [http://fontawesome.io/](http://fontawesome.io/)  
 
-also shoutout to this guy for the clock.js: [http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/](http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/)  
+also shoutout to this guy for the clock.js base: [http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/](http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/)  
 
 setup
 -----
