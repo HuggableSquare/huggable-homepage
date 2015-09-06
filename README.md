@@ -25,6 +25,8 @@ and, since chrome doesn't support custom new tab pages, you can load the folder 
 
 screenshots
 -----------
+these screenshots aren't always up-to-date, so a live demo is available [here](http://pogonip.pw/projects/huggable-homepage/)
+
 ![time_and_date](http://i.imgur.com/O6HlqZ0.png)
 ![date_only](http://i.imgur.com/ab1r70W.png)
 ![neither](http://i.imgur.com/ZIbqEwv.png)
