@@ -47,6 +47,11 @@ html {
   bottom: 0;
 }
 
+.setting {
+  font-weight: normal;
+  color: white;
+}
+
 .setting:hover {
   color: orange;
 }
