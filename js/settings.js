@@ -1,106 +1,67 @@
-$(document).ready(function () {
-  var clockSettingId = document.getElementById('clockSetting');
-  var clock = document.getElementById('clock');
-  
-  var dateSettingId = document.getElementById('dateSetting');
-  var date = document.getElementById('Date');
-  var dateSpace = document.getElementById('datespacefix');
-  
-  var linkSettingId = document.getElementById('linkSetting');
-  var link = document.getElementById('links');
-  
-  var hourSettingId = document.getElementById('clock');
-  var meridiem = document.getElementById('meridiem');
-  var hours12 = document.getElementById('hours12');
-  var hours24 = document.getElementById('hours24');
-  
-  var loveSettingId = document.getElementById('loveSetting');
-  var made1 = document.getElementById('made1');
-  var made2 = document.getElementById('made2');
+// Defaults init
+if (localStorage.getItem('clockSetting') === null) localStorage.setItem("clockSetting", true);
+if (localStorage.getItem('dateSetting') === null) localStorage.setItem("dateSetting", true);
+if (localStorage.getItem('linkSetting') === null) localStorage.setItem("linkSetting", true);
+if (localStorage.getItem('hourSetting') === null) localStorage.setItem("hourSetting", true);
+if (localStorage.getItem('loveSetting') === null) localStorage.setItem("loveSetting", true);
 
-  hours24.style.display = 'none';
+$(document).ready(function () {  
+  // Using jQuery's toggle function to display items based on localStorage
+  // JSON.parse is necessary because browsers don't support booleans
+  // in localStorage (for some reason >.>)
   
-  // Checks stored data on page load
-  if (localStorage.clockSetting == 0) {
-    clock.style.display = 'none';
-  } if (localStorage.dateSetting == 0) {
-    date.style.display = 'none';
-    dateSpace.style.display = 'none';
-  } if (localStorage.linkSetting == 0) {
-    link.style.display = 'none';
-  } if (localStorage.hourSetting == 0) {
-    meridiem.style.display = 'none';
-    hours12.style.display = 'none';
-    hours24.style.display = 'inline-block';
-  } if (localStorage.loveSetting == 0) {
-    made1.style.display = 'none';
-    made2.style.display = 'none';
-  }
+  // clockSetting
+  $("#clock").toggle(JSON.parse(localStorage.clockSetting));
   
-  // OnClick functions
-  clockSettingId.onclick = function () {
-    // Creates local stored variable
-    localStorage.setItem("clockSetting", 1);
-    if (clock.style.display !== 'none') {
-      clock.style.display = 'none';
-      localStorage.clockSetting = 0;
-    } else {
-      clock.style.display = 'inline-block';
-      localStorage.clockSetting = 1;
-    }
-  };
+  // dateSetting
+  $("#Date").toggle(JSON.parse(localStorage.dateSetting));
+  $("#datespacefix").toggle(JSON.parse(localStorage.dateSetting));
+  
+  // linkSetting
+  $("#links").toggle(JSON.parse(localStorage.linkSetting));
+  
+  // hourSetting
+  $("#meridiem").toggle(JSON.parse(localStorage.hourSetting));
+  $("#hours12").toggle(JSON.parse(localStorage.hourSetting));
+  // fixed?
+  $("#hours24").toggle(!JSON.parse(localStorage.hourSetting));
+  
+  // loveSetting
+  $("#made1").toggle(JSON.parse(localStorage.loveSetting));
+  $("#made2").toggle(JSON.parse(localStorage.loveSetting));
+  
+  // Click functions
+  $("#clockSetting").click(function () {
+    localStorage.clockSetting = !JSON.parse(localStorage.clockSetting);
+    
+    $("#clock").toggle(JSON.parse(localStorage.clockSetting));
+  });
 
-  dateSettingId.onclick = function () {
-    // Creates local stored variable
-    localStorage.setItem("dateSetting", 1);
-    if (date.style.display !== 'none') {
-      date.style.display = 'none';
-      dateSpace.style.display = 'none';
-      localStorage.dateSetting = 0;
-    } else {
-      date.style.display = 'block';
-      dateSpace.style.display = 'block';
-      localStorage.dateSetting = 1;
-    }
-  };
+  $("#dateSetting").click(function () {
+    localStorage.dateSetting = !JSON.parse(localStorage.dateSetting);
+    
+    $("#Date").toggle(JSON.parse(localStorage.dateSetting));
+    $("#datespacefix").toggle(JSON.parse(localStorage.dateSetting));
+  });
   
-  linkSettingId.onclick = function () {
-    // Creates local stored variable
-    localStorage.setItem("linkSetting", 1);
-    if (link.style.display !== 'none') {
-      link.style.display = 'none';
-      localStorage.linkSetting = 0;
-    } else {
-      link.style.display = 'block';
-      localStorage.linkSetting = 1;
-    }
-  };
+  $("#linkSetting").click(function () {
+    localStorage.linkSetting = !JSON.parse(localStorage.linkSetting);
+    
+    $("#links").toggle(JSON.parse(localStorage.linkSetting));
+  });
   
-  hourSettingId.onclick = function () {
-    localStorage.setItem("hourSetting", 1);
-    if (meridiem.style.display !== 'none') {
-      meridiem.style.display = 'none';
-      hours12.style.display = 'none';
-      hours24.style.display = 'inline-block';
-      localStorage.hourSetting = 0;
-    } else {
-      meridiem.style.display = 'inline-block';
-      hours12.style.display = 'inline-block';
-      hours24.style.display = 'none';
-      localStorage.hourSetting = 1;
-    }
-  };
+  $("#clock").click(function () {
+    localStorage.hourSetting = !JSON.parse(localStorage.hourSetting);
+    
+    $("#meridiem").toggle(JSON.parse(localStorage.hourSetting));
+    $("#hours12").toggle(JSON.parse(localStorage.hourSetting));
+    $("#hours24").toggle(!JSON.parse(localStorage.hourSetting));
+  });
   
-  loveSettingId.onclick = function () {
-    localStorage.setItem("loveSetting", 1);
-    if (made1.style.display !== 'none') {
-      made1.style.display = 'none';
-      made2.style.display = 'none';
-      localStorage.loveSetting = 0;
-    } else {
-      made1.style.display = 'inline-block';
-      made2.style.display = 'inline-block';
-      localStorage.loveSetting = 1;
-    }
-  };
+  $("#loveSetting").click(function () {
+    localStorage.loveSetting = !JSON.parse(localStorage.loveSetting);
+    
+    $("#made1").toggle(JSON.parse(localStorage.loveSetting));
+    $("#made2").toggle(JSON.parse(localStorage.loveSetting));
+  });
 });
