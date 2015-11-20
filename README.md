@@ -1,6 +1,6 @@
 huggable-homepage
 =================
-this is a poorly made new tab/home page that I made using the css from my website ([pogonip.pw](http://pogonip.pw/))  
+this is a poorly made (less and less with each commit) new tab/home page that I made using the css from my website ([pogonip.pw](http://pogonip.pw/))  
 btw, the clock/calendar/link buttons in the bottom left toggle the clock/date/links, respectively  
 and, clicking on the actual clock will switch between 12 and 24 hour modes  
   

@@ -23,6 +23,7 @@ html {
   background: url('../images/inner.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+
 /* Body/Global Stuff */
 body {
   /* Text Style */
@@ -40,10 +41,6 @@ body {
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,5);
      -moz-box-shadow: inset 0 0 100px rgba(0,0,0,5);
           box-shadow: inset 0 0 100px rgba(0,0,0,5);
-}
-
-table {
-  font-size: 16pt;
 }
 
 /* Classes */
