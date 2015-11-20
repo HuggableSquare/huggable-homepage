@@ -8,11 +8,11 @@ label {
   margin-bottom: 15px;
 }
 
-span div {
+span .child {
   display: none;
 }
 
-span:hover div {
+span:hover .child {
   display: block;
   position: absolute;
   font-size: 10pt;
