@@ -1,21 +1,21 @@
 /* CSS Specific to the Start Page */
-span {
+.parent {
   display: inline-block;
 }
 
-label {
+.parent label {
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
-span .child {
+.parent .child {
   display: none;
+  font-size: 10pt;
 }
 
-span:hover .child {
+.parent:hover .child {
   display: block;
   position: absolute;
-  font-size: 10pt;
 }
 
 html {
@@ -53,5 +53,37 @@ html {
 }
 
 .setting:hover {
-  color: orange;
+  color: #CC3366;
+}
+
+#foot-left {
+  float: left;
+  text-align: left;
+}
+
+#foot-left .setting {
+  margin-left: 16px;
+}
+
+#foot-right {
+  float: right;
+  text-align: right;
+  margin-right: 16px;
+}
+
+#meridiem {
+  font-size: 16pt;
+}
+
+#clock {
+  font-size: 72pt;
+  margin-bottom: 16pt;
+}
+
+#date {
+  margin-bottom: 16pt;
+}
+
+.clock {
+  margin-top: 16pt;
 }

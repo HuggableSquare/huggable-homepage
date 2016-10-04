@@ -14,47 +14,53 @@
   <body>
     <div class="inner">
       <div class="clock">
-        <span class="btn hvr-float" style="font-size: 72pt;" id="clock">
+        <span class="btn hvr-float" id="clock">
           <b id="hours24"></b>
           <b id="hours12"></b>
           <b id="point">:</b>
           <b id="min"></b>
-          <sup><b style="font-size: 16pt;" id="meridiem"></b></sup>
+          <sup><b id="meridiem"></b></sup>
         </span>
-        <div id="datespacefix"><br /></div>
-        <div id="Date"></div>
+        <div id="date"></div>
       </div>
-      <br />
       <div id="links">
-        <span>
+        <span class="parent">
           <label class="btn hvr-float">4chan. <i class="fa fa-sort"></i></label>
 
-          <br /><span class="child"><a href="https://boards.4chan.org/g/catalog" class="btn">/g/.</a>
+          <span class="child"><a href="https://boards.4chan.org/g/catalog" class="btn">/tv/.</a>
+          <a href="https://boards.4chan.org/g/catalog" class="btn">/g/.</a>
           <a href="https://boards.4chan.org/wsg/catalog" class="btn">/wsg/.</a></span>
         </span>
-        <span>
+        <span class="parent">
           <label class="btn hvr-float">reddit. <i class="fa fa-sort"></i></label>
 
-          <br /><span class="child"><a href="https://reddit.com/r/abandonedporn/" class="btn">/r/abandonedporn.</a>
-          <a href="https://reddit.com/r/osugame/" class="btn">/r/osugame.</a>
+          <span class="child"><a href="https://reddit.com/r/datahoarder/" class="btn">/r/datahoarder.</a>
+          <a href="https://reddit.com/r/mechanicalkeyboards/" class="btn">/r/mechanicalkeyboards.</a>
           <a href="https://reddit.com/" class="btn">front page.</a></span>
         </span>
-        <span>
+				<span class="parent">
+          <label class="btn hvr-float">media. <i class="fa fa-sort"></i></label>
+
+          <span class="child"><a href="https://youtube.com/" class="btn">youtube.</a>
+          <a href="https://play.google.com/music/" class="btn">google play music.</a>
+					<a href="https://getpocket.com/a/queue/" class="btn">pocket.</a></span>
+        </span>
+        <span class="parent">
           <label class="btn hvr-float">news. <i class="fa fa-sort"></i></label>
 
-          <br /><span class="child"><a href="http://thenextweb.com/" class="btn">the next web.</a>
-          <a href="http://www.windowscentral.com/" class="btn">windows central.</a>
-          <a href="http://techcrunch.com/" class="btn">techcrunch.</a></span>
+          <span class="child"><a href="https://news.ycombinator.com/" class="btn">hacker news.</a>
+          <a href="http://techmeme.com/" class="btn">techmeme.</a></span>
         </span>
-        <span>
+        <span class="parent">
           <label class="btn hvr-float">misc. <i class="fa fa-sort"></i></label>
 
-          <br /><span class="child"><a href="https://agar.io/" class="btn">agario.</a></span>
+          <span class="child"><a href="https://agar.io/" class="btn">agario.</a>
+          <a href="http://hextris.io/" class="btn">hextris.</a></span>
         </span>
       </div>
 	  <div class="footer">
-        <div style="float:left;text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-clock-o setting" id="clockSetting"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar-o setting" id="dateSetting"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link setting" id="linkSetting"></i></div>
-        <div style="float:right;text-align:right;"><span id="made1">made with&nbsp;</span><i class="fa fa-heart-o setting" id="loveSetting"></i><span id="made2">&nbsp;by <a class="setting" href="http://pogonip.pw/">huggablesquare</a></span>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div id="foot-left"><i class="fa fa-clock-o setting" id="clockSetting"></i><i class="fa fa-calendar-o setting" id="dateSetting"></i><i class="fa fa-link setting" id="linkSetting"></i></div>
+        <div id="foot-right"><span id="made1">made with </span><i class="fa fa-heart-o setting" id="loveSetting"></i><span id="made2"> by <a class="setting" href="https://pogonip.pw/">huggablesquare</a></span></div>
       </div>
     </div>
   </body>
