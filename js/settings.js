@@ -6,6 +6,18 @@ if (localStorage.getItem('hourSetting') === null) localStorage.setItem('hourSett
 if (localStorage.getItem('loveSetting') === null) localStorage.setItem('loveSetting', true);
 
 $(document).ready(function () {
+  // dynamically generating links
+  let links = JSON.parse(localStorage.getItem('links'));
+  let html = '';
+  for (let x in links) {
+    html += `<span class="parent"><label class="btn hvr-float">${x} <i class="fa fa-sort"></i></label><span class="child">`;
+    for (let y in links[x]) {
+      html += `<a href="${links[x][y]}" class="btn">${y}</a>&nbsp;`;
+    }
+    html += '</span></span>&nbsp;';
+  }
+  $('#links').html(html);
+
   // Using jQuery's toggle function to display items based on localStorage
   // JSON.parse is necessary because browsers don't support booleans
   // in localStorage (for some reason >.>)

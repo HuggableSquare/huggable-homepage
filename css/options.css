@@ -1,0 +1,9 @@
+textarea {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-color: orange;
+}
+
+.buttons {
+  padding-top: 1em;
+}
