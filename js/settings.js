@@ -30,9 +30,6 @@ $(document).ready(function () {
 
   // hourSetting
   $meridiem.toggle(JSON.parse(localStorage.hourSetting));
-  $hours12.toggle(JSON.parse(localStorage.hourSetting));
-  // fixed?
-  $hours24.toggle(!JSON.parse(localStorage.hourSetting));
 
   // loveSetting
   $made1.toggle(JSON.parse(localStorage.loveSetting));
@@ -43,6 +40,7 @@ $(document).ready(function () {
     localStorage.clockSetting = !JSON.parse(localStorage.clockSetting);
 
     $clock.toggle(JSON.parse(localStorage.clockSetting));
+    if (JSON.parse(localStorage.clockSetting)) setTime();
   });
 
   $('#dateSetting').click(function () {
@@ -61,8 +59,7 @@ $(document).ready(function () {
     localStorage.hourSetting = !JSON.parse(localStorage.hourSetting);
 
     $meridiem.toggle(JSON.parse(localStorage.hourSetting));
-    $hours12.toggle(JSON.parse(localStorage.hourSetting));
-    $hours24.toggle(!JSON.parse(localStorage.hourSetting));
+    setTime();
   });
 
   $('#loveSetting').click(function () {
