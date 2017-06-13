@@ -9,7 +9,6 @@ dependencies
 the dependencies are managed using `yarn`  
 here's a list of them:
 + hover - [http://ianlunn.github.io/Hover/](http://ianlunn.github.io/Hover/)
-+ jquery - [http://jquery.com/download/](http://jquery.com/download/)
 + fontawesome - [http://fontawesome.io/](http://fontawesome.io/)  
 
 also shoutout to this guy for the clock.js base: [http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/](http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/)  
