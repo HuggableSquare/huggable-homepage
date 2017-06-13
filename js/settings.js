@@ -1,9 +1,9 @@
 // Defaults init
-if (localStorage.getItem('clockSetting') === null) localStorage.setItem("clockSetting", true);
-if (localStorage.getItem('dateSetting') === null) localStorage.setItem("dateSetting", true);
-if (localStorage.getItem('linkSetting') === null) localStorage.setItem("linkSetting", true);
-if (localStorage.getItem('hourSetting') === null) localStorage.setItem("hourSetting", true);
-if (localStorage.getItem('loveSetting') === null) localStorage.setItem("loveSetting", true);
+if (localStorage.getItem('clockSetting') === null) localStorage.setItem('clockSetting', true);
+if (localStorage.getItem('dateSetting') === null) localStorage.setItem('dateSetting', true);
+if (localStorage.getItem('linkSetting') === null) localStorage.setItem('linkSetting', true);
+if (localStorage.getItem('hourSetting') === null) localStorage.setItem('hourSetting', true);
+if (localStorage.getItem('loveSetting') === null) localStorage.setItem('loveSetting', true);
 
 $(document).ready(function () {
   // Using jQuery's toggle function to display items based on localStorage
