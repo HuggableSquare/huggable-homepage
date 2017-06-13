@@ -1,0 +1,11 @@
+{
+  "name": "huggable-homepage",
+  "version": "0.1.2",
+  "repository": "https://github.com/HuggableSquare/huggable-homepage.git",
+  "author": "Nick/Nelson <huggablesquare@gmail.com>",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hover.css": "^2.2.0",
+    "jquery": "^3.2.1"
+  }
+}

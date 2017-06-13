@@ -6,9 +6,8 @@ and, clicking on the actual clock will switch between 12 and 24 hour modes
   
 dependencies
 ------------
-I didn't package any of the dependencies because I'm not sure if I should  
-they are all linked on some sort of cdn though  
-here's a list:
+the dependencies are managed using `yarn`  
+here's a list of them:
 + hover - [http://ianlunn.github.io/Hover/](http://ianlunn.github.io/Hover/)
 + jquery - [http://jquery.com/download/](http://jquery.com/download/)
 + fontawesome - [http://fontawesome.io/](http://fontawesome.io/)  
