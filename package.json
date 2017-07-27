@@ -4,7 +4,6 @@
   "repository": "https://github.com/HuggableSquare/huggable-homepage.git",
   "author": "Nick/Nelson <huggablesquare@gmail.com>",
   "dependencies": {
-    "font-awesome": "^4.7.0",
-    "hover.css": "^2.2.0"
+    "font-awesome": "^4.7.0"
   }
 }

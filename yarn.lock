@@ -5,7 +5,3 @@
 font-awesome@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
-
-hover.css@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/hover.css/-/hover.css-2.2.0.tgz#3a457c4f6bf756dcebae0317f09a8088c7626a77"
