@@ -59,9 +59,9 @@ body {
   display: flex;
   align-items: center;
 
-  -webkit-animation: fadein 2s;
-     -moz-animation: fadein 2s;
-          animation: fadein 2s;
+  -webkit-animation: fadein 1s;
+     -moz-animation: fadein 1s;
+          animation: fadein 1s;
 }
 
 /* Classes */
