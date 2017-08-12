@@ -5,14 +5,30 @@
     <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/options.css">
     <script type="text/javascript" src="js/options.js"></script>
+    <script type="text/javascript" src="js/css.js"></script>
   </head>
   
   <body>
     <div class="inner">
-      <textarea rows="40" cols="150" id="links"></textarea>
-      <div class="buttons">
-        <button class="btn hvr-float" id="save">save</button>
-        <button class="btn hvr-float" id="export">export</button>
+      <div class="column">
+        <h2>links.</h2>
+        <textarea rows="20" id="links"></textarea>
+        <div class="buttons">
+          <button class="btn hvr-float" id="links-save">save</button>
+          <button class="btn hvr-float" id="links-export">export</button>
+        </div>
+      </div>
+      <div class="column">
+        <h2>background.</h2>
+        <input type="file" id="background">
+      </div>
+      <div class="css column">
+        <h2>custom css.</h2>
+        <textarea rows="20" id="css"></textarea>
+        <div class="buttons">
+          <button class="btn hvr-float" id="css-save">save</button>
+          <button class="btn hvr-float" id="css-export">export</button>
+        </div>
       </div>
     </div>
   </body>

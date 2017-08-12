@@ -1,9 +1,31 @@
+.inner {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.inner > .column {
+  flex: 1;
+}
+
 textarea {
   background: rgba(0, 0, 0, 0.5);
   color: white;
+  border-width: 2px;
+  border-color: white;
+  width: 90%;
+}
+
+textarea:focus {
+  outline: none;
   border-color: orange;
 }
 
 .buttons {
   padding-top: 1em;
+}
+
+.column {
+  text-align: left;
 }
