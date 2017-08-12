@@ -18,12 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
   // dynamically generating links
   let links = JSON.parse(localStorage.getItem('links'));
   let html = '';
-  for (let x in links) {
-    html += `<span class="parent"><label class="btn hvr-float">${x} <i class="fa fa-sort"></i></label><span class="child">`;
-    for (let y in links[x]) {
-      html += `<a href="${links[x][y]}" class="btn">${y}</a>&nbsp;`;
+  if (links && Object.keys(links).length !== 0) {
+    for (let x in links) {
+      html += `<span class="parent"><label class="btn hvr-float">${x} <i class="fa fa-sort"></i></label><span class="child">`;
+      for (let y in links[x]) {
+        html += `<a href="${links[x][y]}" class="btn">${y}</a>&nbsp;`;
+      }
+      html += '</span></span>&nbsp;';
     }
-    html += '</span></span>&nbsp;';
+  } else {
+    html = '<i>You have no links saved. Would you like to <a href="options.html">add some now</a>?</i>';
   }
   document.getElementById('links').innerHTML = html;
 
