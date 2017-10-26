@@ -15,11 +15,12 @@ also shoutout to this guy for the clock.js base: [http://www.alessioatzeni.com/b
 
 setup
 -----
-assuming you don't need the same websites as me on your new tab page, you can change the spans to fit your needs. the labels are what shows on the parent button, and the links are what shows up in the child buttons. if you know any html at all you can probably figure it out.  
+step 1. clone the repo  
+step 2. install the dependencies with `yarn` or `npm`  
+step 3. ???  
+step 4. profit
 
-other than that, it's pretty self-explanatory, but with dependencies in mind, either stick with the cdn, or if you want an entirely offline setup you can download them and change the paths in new.html (entirely up to you)  
-
-and, since chrome doesn't support custom new tab pages, you can load the folder as an extension (hence the manifest.json) or you can download some other extension that does the same thing (also entirely up to you)  
+also, since chrome doesn't support custom new tab pages, you can load the folder as an extension (hence the manifest.json) or you can download some other extension that does the same thing (entirely up to you)
 
 screenshots
 -----------
