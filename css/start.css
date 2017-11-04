@@ -1,0 +1,68 @@
+/* CSS Specific to the Start Page */
+.parent {
+  display: inline-block;
+}
+
+.parent label {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.parent .child {
+  display: none;
+  font-size: 10pt;
+}
+
+.parent:hover .child {
+  display: block;
+  position: absolute;
+}
+
+.footer {
+  font-size: 12pt;
+  padding-bottom: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.setting {
+  font-weight: normal;
+  color: white;
+}
+
+.setting:hover {
+  color: orange;
+}
+
+#foot-left {
+  float: left;
+  text-align: left;
+}
+
+#foot-left .setting {
+  margin-left: 16px;
+}
+
+#foot-right {
+  float: right;
+  text-align: right;
+  margin-right: 16px;
+}
+
+#meridiem {
+  font-size: 16pt;
+}
+
+#clock {
+  font-size: 72pt;
+  margin-bottom: 16pt;
+}
+
+#date {
+  margin-bottom: 16pt;
+}
+
+.clock {
+  margin-top: 16pt;
+}
