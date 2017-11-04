@@ -3,6 +3,9 @@
   "version": "0.1.2",
   "repository": "https://github.com/HuggableSquare/huggable-homepage.git",
   "author": "Nick/Nelson <huggablesquare@gmail.com>",
+  "scripts": {
+    "build": "mkdir -p css/font-awesome/ && cp node_modules/font-awesome/css/font-awesome.css css/font-awesome/ && cp node_modules/font-awesome/fonts/* css/fonts/"
+  },
   "dependencies": {
     "font-awesome": "^4.7.0"
   }

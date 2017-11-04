@@ -16,7 +16,7 @@ also shoutout to this guy for the clock.js base: [http://www.alessioatzeni.com/b
 setup
 -----
 step 1. clone the repo  
-step 2. install the dependencies with `yarn` or `npm`  
+step 2. `yarn && yarn run build`  
 step 3. ???  
 step 4. profit
 
